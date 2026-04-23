@@ -2,54 +2,60 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { MousePointerClick, MessageCircle, Truck } from 'lucide-react';
+import ParallaxBackground from './ParallaxBackground';
 
 export default function HowToBuy() {
   const steps = [
     {
-      icon: <MousePointerClick className="w-10 h-10 text-background" />,
-      title: "1. Variedad",
+      icon: <MousePointerClick className="w-8 h-8 text-[#0A1828]" />,
+      title: "1. Selección",
       description: "Elige tus notas y perfil de taza favoritos."
     },
     {
-      icon: <MessageCircle className="w-10 h-10 text-background" />,
+      icon: <MessageCircle className="w-8 h-8 text-[#0A1828]" />,
       title: "2. Contacto",
-      description: "Confírmanos tu pedido por WhatsApp."
+      description: "Confírmanos tu pedido por WhatsApp directamente."
     },
     {
-      icon: <Truck className="w-10 h-10 text-background" />,
+      icon: <Truck className="w-8 h-8 text-[#0A1828]" />,
       title: "3. Entrega",
-      description: "Recibe fresco y paga al mensajero."
+      description: "Recibe el café fresco y paga al mensajero."
     }
   ];
 
   return (
-    <section className="py-24 bg-[#0A1828] relative overflow-hidden px-6 border-y border-gold-500/10">
-      <div className="absolute top-0 right-0 w-96 h-96 bg-gold-500/5 rounded-full blur-3xl mix-blend-screen"></div>
+    <section className="py-32 bg-[#0A1828] relative overflow-hidden px-6 border-y border-gold-500/10">
+      <ParallaxBackground imageSrc="/assets/6.jpeg" opacity={0.05} speed="-slow" />
+      <ParallaxBackground imageSrc="/assets/8.jpeg" opacity={0.03} speed="slow" blendMode="mix-blend-screen" className="rotate-180" />
+
+      <div className="absolute top-0 right-0 w-96 h-96 bg-gold-500/5 rounded-full blur-[100px] mix-blend-screen pointer-events-none"></div>
+      
       <div className="container mx-auto relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-black text-foreground mb-4 uppercase tracking-wider">La Experiencia</h2>
-          <div className="w-16 h-1 bg-gold-500 mx-auto mb-6"></div>
+        <div className="text-center mb-24">
+          <h2 className="text-sm text-gold-500 uppercase tracking-[0.4em] mb-4">¿Cómo Obtenerlo?</h2>
+          <h3 className="text-3xl md:text-5xl font-black text-[#F2EAE1] mb-6 uppercase tracking-wider">La Experiencia</h3>
+          <div className="w-12 h-0.5 bg-gold-500 mx-auto"></div>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-center items-center md:items-stretch gap-10 max-w-5xl mx-auto">
+        <div className="flex flex-col md:flex-row justify-center items-center md:items-stretch gap-12 max-w-5xl mx-auto">
           {steps.map((step, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="flex-1 text-center relative"
+              transition={{ duration: 0.8, delay: index * 0.2 }}
+              className="flex-1 text-center relative group"
             >
-              <div className="w-20 h-20 mx-auto bg-gradient-to-br from-gold-500 to-gold-600 rounded-full mb-8 flex items-center justify-center shadow-lg shadow-gold-500/20 border-4 border-[#0A1828] outline outline-1 outline-gold-500/30">
+              <div className="w-24 h-24 mx-auto bg-gradient-to-br from-gold-500 to-gold-600 rounded-full mb-10 flex items-center justify-center shadow-[0_0_30px_rgba(207,160,113,0.3)] border-4 border-[#0A1828] outline outline-1 outline-gold-500/50 group-hover:scale-110 transition-transform duration-500">
                 {step.icon}
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-3 uppercase tracking-wide">{step.title}</h3>
-              <p className="text-foreground/70 leading-relaxed font-light">{step.description}</p>
+              <h3 className="text-lg font-black text-gold-500 mb-3 uppercase tracking-widest">{step.title}</h3>
+              <p className="text-[#F2EAE1]/70 leading-relaxed font-light px-4">{step.description}</p>
               
-              {/* Connector line for desktop */}
+              {/* Elegant Connector line for desktop */}
               {index < steps.length - 1 && (
-                <div className="hidden md:block absolute top-10 left-[60%] w-full h-[1px] bg-gradient-to-r from-gold-500/50 to-transparent z-[-1]"></div>
+                <div className="hidden md:block absolute top-[3rem] left-[65%] w-full h-[1px] bg-gradient-to-r from-gold-500/70 via-gold-500/20 to-transparent z-[-1]"></div>
               )}
             </motion.div>
           ))}
