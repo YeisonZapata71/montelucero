@@ -2,6 +2,7 @@ import AnnouncementBar from '@/components/AnnouncementBar';
 import Hero from '@/components/Hero';
 import ProductCardList from '@/components/ProductCard';
 import HowToBuy from '@/components/HowToBuy';
+import GalleryMosaic from '@/components/GalleryMosaic';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <ProductCardList />
       <HowToBuy />
+      <GalleryMosaic />
       <Footer />
       <FloatingWhatsApp />
     </main>
