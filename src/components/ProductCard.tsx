@@ -38,13 +38,13 @@ export default function ProductCardList() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="bg-foreground/5 rounded-2xl overflow-hidden border border-gold-500/20 group hover:border-gold-500/50 transition-colors"
+              className="bg-white rounded-2xl overflow-hidden shadow-xl shadow-foreground/5 border border-foreground/5 group hover:shadow-2xl hover:border-gold-500/20 transition-all"
             >
-              <div className="aspect-[4/5] relative bg-foreground/10 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent to-gold-500/10 mix-blend-overlay z-10 pointer-events-none"></div>
-                {/* Fallback pattern if images are missing */}
-                <div className="absolute inset-0 flex items-center justify-center opacity-10">
-                   <span className="text-gold-500 font-bold tracking-widest rotate-[-45deg] scale-150">MONTE LUCERO</span>
+              <div className="aspect-[4/5] relative bg-background overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10 pointer-events-none"></div>
+                {/* Fallback pattern */}
+                <div className="absolute inset-0 flex items-center justify-center opacity-5">
+                   <span className="text-foreground font-bold tracking-widest rotate-[-45deg] scale-150">MONTE LUCERO</span>
                 </div>
                 <img 
                   src={product.image} 
@@ -54,20 +54,20 @@ export default function ProductCardList() {
                 />
               </div>
               
-              <div className="p-6">
+              <div className="p-6 relative z-20">
                 <h3 className="text-xl font-bold text-foreground mb-2">{product.name}</h3>
-                <p className="text-2xl font-light text-gold-500 mb-4">{product.price}</p>
+                <p className="text-2xl font-bold text-gold-500 mb-4">{product.price}</p>
                 
                 <div className="flex items-center gap-2 text-sm text-foreground/80 bg-gold-500/10 w-fit px-3 py-1.5 rounded-full mb-6">
-                  <CheckCircle2 size={16} className="text-gold-500" />
-                  <span>Disponible para Pago Contraentrega</span>
+                  <CheckCircle2 size={16} className="text-gold-600" />
+                  <span className="font-medium text-gold-600">Pago Contraentrega</span>
                 </div>
 
                 <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   onClick={() => openWhatsApp(product.name)}
-                  className="w-full bg-transparent hover:bg-gold-500/10 border border-gold-500 text-gold-500 py-3 rounded-lg font-medium transition-colors flex items-center justify-center gap-2 group-hover:bg-gold-500 group-hover:text-background"
+                  className="w-full bg-white hover:bg-gold-500 border-2 border-gold-500 text-gold-600 hover:text-white py-3 rounded-lg font-bold transition-colors flex items-center justify-center gap-2 group-hover:bg-gold-500 group-hover:text-white"
                 >
                   <MessageCircle size={20} />
                   Lo quiero
