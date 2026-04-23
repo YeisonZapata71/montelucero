@@ -24,9 +24,7 @@ export default function Footer() {
           <div className="flex-1 text-center md:text-right mt-4 md:mt-0">
             <h3 className="text-gold-500 font-bold mb-6 text-xs tracking-[0.3em] uppercase">Red de Envíos Seguros</h3>
             <div className="flex flex-wrap justify-center md:justify-end gap-8 items-center grayscale opacity-40">
-              <div className="font-bold text-sm uppercase tracking-widest text-[#F2EAE1]">Servientrega</div>
-              <div className="font-bold text-sm uppercase tracking-widest text-[#F2EAE1]">Envía</div>
-              <div className="font-bold text-sm uppercase tracking-widest text-[#F2EAE1]">DHL</div>
+              <div className="font-bold text-lg uppercase tracking-widest text-[#F2EAE1]">Coordinadora</div>
             </div>
           </div>
         </div>
