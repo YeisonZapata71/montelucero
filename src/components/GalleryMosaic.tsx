@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function GalleryMosaic() {
   // Array from 1 to 14
-  const images = Array.from({ length: 14 }, (_, i) => `/assets/${i + 1}.jpeg`);
+  const images = Array.from({ length: 14 }, (_, i) => `/assets/${i + 1}.jpeg?v=2`);
   
   // Duplicate array for infinite scroll effect (marquee)
   const marqueeImages = [...images, ...images];
