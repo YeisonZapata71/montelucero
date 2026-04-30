@@ -3,8 +3,26 @@ import React, { useRef, useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
 export default function GalleryMosaic() {
-  // Array from 1 to 14
-  const images = Array.from({ length: 14 }, (_, i) => `/assets/${i + 1}.jpeg`);
+  const images = [
+    '/assets/1.jpeg',
+    '/assets/10.jpeg',
+    '/assets/11.jpeg',
+    '/assets/12.jpeg',
+    '/assets/13.jpeg',
+    '/assets/14.jpeg',
+    '/assets/2.jpeg',
+    '/assets/250.png',
+    '/assets/2500.png',
+    '/assets/3.jpeg',
+    '/assets/4.jpeg',
+    '/assets/5.jpeg',
+    '/assets/500.png',
+    '/assets/6.jpeg',
+    '/assets/7.jpeg',
+    '/assets/8.jpeg',
+    '/assets/9.jpeg',
+    '/assets/hero-coffee.jpeg'
+  ];
   
   // Duplicate array for infinite scroll effect (marquee)
   const marqueeImages = [...images, ...images];
@@ -28,13 +46,10 @@ export default function GalleryMosaic() {
               key={index} 
               className="relative w-40 h-56 md:w-56 md:h-72 rounded-xl overflow-hidden group flex-shrink-0 cursor-pointer shadow-[0_10px_20px_rgba(0,0,0,0.5)] border border-[#0A1828] hover:border-gold-500/50 transition-all duration-500"
             >
-              {/* Overlay for deep blue tint */}
-              <div className="absolute inset-0 bg-[#0A1828]/60 group-hover:bg-transparent transition-colors duration-700 z-10 pointer-events-none"></div>
-              
               <img 
                 src={src} 
                 alt="Monte Lucero Gallery" 
-                className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 brightness-75 group-hover:brightness-100 scale-100 group-hover:scale-110 transition-all duration-700" 
+                className="w-full h-full object-cover scale-100 group-hover:scale-110 transition-all duration-700" 
                 onError={(e) => (e.currentTarget.style.display = 'none')}
               />
             </div>
