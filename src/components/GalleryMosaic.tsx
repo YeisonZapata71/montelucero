@@ -3,26 +3,8 @@ import React, { useRef, useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
 export default function GalleryMosaic() {
-  const images = [
-    '/assets/1.jpeg',
-    '/assets/10.jpeg',
-    '/assets/11.jpeg',
-    '/assets/12.jpeg',
-    '/assets/13.jpeg',
-    '/assets/14.jpeg',
-    '/assets/2.jpeg',
-    '/assets/250.png',
-    '/assets/2500.png',
-    '/assets/3.jpeg',
-    '/assets/4.jpeg',
-    '/assets/5.jpeg',
-    '/assets/500.png',
-    '/assets/6.jpeg',
-    '/assets/7.jpeg',
-    '/assets/8.jpeg',
-    '/assets/9.jpeg',
-    '/assets/hero-coffee.jpeg'
-  ];
+  // Array from 1 to 14
+  const images = Array.from({ length: 14 }, (_, i) => `/assets/${i + 1}.jpeg`);
   
   // Duplicate array for infinite scroll effect (marquee)
   const marqueeImages = [...images, ...images];
@@ -35,7 +17,7 @@ export default function GalleryMosaic() {
          <h3 className="text-gold-500 font-bold text-xs tracking-[0.4em] uppercase">El Mundo Monte Lucero</h3>
       </div>
 
-      <div className="relative w-full overflow-hidden flex">
+      <div className="relative w-full overflow-hidden flex z-20">
         <motion.div 
           className="flex gap-4 w-max px-4"
           animate={{ x: ["0%", "-50%"] }}
