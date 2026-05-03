@@ -21,7 +21,7 @@ const products: Product[] = [
 export default function ProductCardList() {
   const openWhatsApp = (productName: string) => {
     const message = `Hola Monte Lucero, quiero comprar la presentación de ${productName}. Me interesa la opción Contraentrega. Mi ciudad es: `;
-    window.open(`https://wa.me/573000000000?text=${encodeURIComponent(message)}`, "_blank");
+    window.open(`https://wa.me/573186470507?text=${encodeURIComponent(message)}`, "_blank");
   };
 
   return (

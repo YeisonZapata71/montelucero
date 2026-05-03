@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 export default function Hero() {
   const handleWhatsApp = () => {
     const message = encodeURIComponent("Hola Monte Lucero, quiero comprar café. ¿Me pueden ayudar?");
-    window.open(`https://wa.me/573000000000?text=${message}`, "_blank");
+    window.open(`https://wa.me/573186470507?text=${message}`, "_blank");
   };
 
   return (

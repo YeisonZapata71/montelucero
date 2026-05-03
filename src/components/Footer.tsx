@@ -34,7 +34,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="text-center text-[#F2EAE1]/30 text-xs tracking-[0.2em] uppercase">
+        <div className="text-center text-[#F2EAE1]/30 text-xs tracking-[0.2em] uppercase flex flex-col gap-2">
+          <p>Contacto / WhatsApp: +57 3186470507</p>
           <p>&copy; {new Date().getFullYear()} Monte Lucero Café. Todos los derechos reservados.</p>
         </div>
       </div>
