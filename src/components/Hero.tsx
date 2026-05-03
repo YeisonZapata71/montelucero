@@ -60,21 +60,21 @@ export default function Hero() {
              {/* Simple elegant glow behind the products */}
              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-gold-500/15 rounded-full blur-[80px] pointer-events-none z-0"></div>
              
-             {/* 2500gr - Back */}
+             {/* 240gr Molido - Back Left */}
              <motion.img 
-               src="/assets/2500.png" 
-               alt="Monte Lucero 2.500gr" 
-               className="w-[50%] md:w-[60%] absolute top-[10%] left-[10%] z-10 drop-shadow-[0_30px_35px_rgba(0,0,0,0.8)] opacity-90" 
+               src="/assets/240M.png" 
+               alt="Monte Lucero 240gr Molido" 
+               className="w-[45%] md:w-[50%] absolute top-[15%] left-[5%] z-10 drop-shadow-[0_30px_35px_rgba(0,0,0,0.8)] opacity-90" 
                initial={{ y: 20 }}
                animate={{ y: [0, -10, 0] }}
                transition={{ repeat: Infinity, duration: 8, ease: "easeInOut", delay: 1 }}
                onError={(e) => (e.currentTarget.style.display = 'none')}
              />
 
-             {/* 500gr - Front Center */}
+             {/* 480gr Grano - Front Center */}
              <motion.img 
-               src="/assets/500.png" 
-               alt="Monte Lucero 500gr" 
+               src="/assets/480.png" 
+               alt="Monte Lucero 480gr" 
                className="w-[60%] md:w-[70%] absolute bottom-[10%] z-30 drop-shadow-[0_40px_45px_rgba(0,0,0,0.9)]" 
                initial={{ y: 20 }}
                animate={{ y: [0, -12, 0] }}
@@ -82,11 +82,11 @@ export default function Hero() {
                onError={(e) => (e.currentTarget.style.display = 'none')}
              />
 
-             {/* 250gr - Right Mid */}
+             {/* 480gr Molido - Right Mid */}
              <motion.img 
-               src="/assets/250.png" 
-               alt="Monte Lucero 250gr" 
-               className="w-[40%] md:w-[45%] absolute top-[30%] right-[5%] z-20 drop-shadow-[0_25px_30px_rgba(0,0,0,0.7)]" 
+               src="/assets/480M.png" 
+               alt="Monte Lucero 480gr Molido" 
+               className="w-[40%] md:w-[45%] absolute top-[25%] right-[5%] z-20 drop-shadow-[0_25px_30px_rgba(0,0,0,0.7)]" 
                initial={{ y: 20 }}
                animate={{ y: [0, -8, 0] }}
                transition={{ repeat: Infinity, duration: 7, ease: "easeInOut", delay: 2 }}
