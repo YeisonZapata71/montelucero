@@ -13,10 +13,10 @@ interface Product {
 }
 
 const products: Product[] = [
-  { id: '1', name: 'Café en Grano', grams: '240 gr', price: '$30.800 COP', image: '/assets/240.png' },
-  { id: '2', name: 'Café en Grano', grams: '480 gr', price: '$44.900 COP', image: '/assets/480.png' },
-  { id: '3', name: 'Café Molido', grams: '240 gr', price: '$29.900 COP', image: '/assets/240M.png' },
-  { id: '4', name: 'Café Molido', grams: '480 gr', price: '$43.900 COP', image: '/assets/480M.png' },
+  { id: '1', name: 'Café en Grano', grams: '240 gr', price: '$30.800 COP', image: '/assets/240.png?v=2' },
+  { id: '2', name: 'Café en Grano', grams: '480 gr', price: '$44.900 COP', image: '/assets/480.png?v=2' },
+  { id: '3', name: 'Café Molido', grams: '240 gr', price: '$29.900 COP', image: '/assets/240M.png?v=2' },
+  { id: '4', name: 'Café Molido', grams: '480 gr', price: '$43.900 COP', image: '/assets/480M.png?v=2' },
 ];
 
 export default function ProductCardList() {

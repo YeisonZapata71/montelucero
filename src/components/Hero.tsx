@@ -62,7 +62,7 @@ export default function Hero() {
              
              {/* 240gr Molido - Back Left */}
              <motion.img 
-               src="/assets/240M.png" 
+               src="/assets/240M.png?v=2" 
                alt="Monte Lucero 240gr Molido" 
                className="w-[45%] md:w-[50%] absolute top-[15%] left-[5%] z-10 drop-shadow-[0_30px_35px_rgba(0,0,0,0.8)] opacity-90" 
                initial={{ y: 20 }}
@@ -73,7 +73,7 @@ export default function Hero() {
 
              {/* 480gr Grano - Front Center */}
              <motion.img 
-               src="/assets/480.png" 
+               src="/assets/480.png?v=2" 
                alt="Monte Lucero 480gr" 
                className="w-[60%] md:w-[70%] absolute bottom-[10%] z-30 drop-shadow-[0_40px_45px_rgba(0,0,0,0.9)]" 
                initial={{ y: 20 }}
@@ -84,7 +84,7 @@ export default function Hero() {
 
              {/* 480gr Molido - Right Mid */}
              <motion.img 
-               src="/assets/480M.png" 
+               src="/assets/480M.png?v=2" 
                alt="Monte Lucero 480gr Molido" 
                className="w-[40%] md:w-[45%] absolute top-[25%] right-[5%] z-20 drop-shadow-[0_25px_30px_rgba(0,0,0,0.7)]" 
                initial={{ y: 20 }}
