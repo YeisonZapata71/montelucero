@@ -10,7 +10,12 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-12 mb-16 border-b border-white/5 pb-16">
           
           <div className="text-center md:text-left flex-1 md:max-w-xs">
-            <h2 className="text-3xl font-black italic text-gold-500 font-serif tracking-widest mb-6 drop-shadow-sm">MONTE LUCERO</h2>
+            <h2 
+              className="text-4xl font-black italic text-gold-500 font-serif tracking-widest mb-6 drop-shadow-sm leading-tight"
+              style={{ fontFamily: 'Garamond, serif' }}
+            >
+              Monte<br/>Lucero
+            </h2>
             <p className="text-[#F2EAE1]/60 text-sm font-light leading-relaxed">
               Café de especialidad desde las montañas colombianas. Llevamos el lujo y el mejor sabor directo a tu puerta con la seguridad e inmediatez del pago contraentrega.
             </p>
