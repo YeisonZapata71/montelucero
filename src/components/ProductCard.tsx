@@ -13,15 +13,16 @@ interface Product {
 }
 
 const products: Product[] = [
-  { id: '1', name: 'Experiencia Personal', grams: '250 gr en Grano', price: '$25.000 COP', image: '/assets/250.png' },
-  { id: '2', name: 'Reserva Premium', grams: '500 gr en Grano', price: '$45.000 COP', image: '/assets/500.png' },
-  { id: '3', name: 'Familiar Dorada', grams: '2.500 gr en Grano', price: '$180.000 COP', image: '/assets/2500.png' },
+  { id: '1', name: 'Café en Grano', grams: '240 gr', price: '$30.800 COP', image: '/assets/240.png?v=2' },
+  { id: '2', name: 'Café en Grano', grams: '480 gr', price: '$44.900 COP', image: '/assets/480.png?v=2' },
+  { id: '3', name: 'Café Molido', grams: '240 gr', price: '$29.900 COP', image: '/assets/240M.png?v=2' },
+  { id: '4', name: 'Café Molido', grams: '480 gr', price: '$43.900 COP', image: '/assets/480M.png?v=2' },
 ];
 
 export default function ProductCardList() {
   const openWhatsApp = (productName: string) => {
     const message = `Hola Monte Lucero, quiero comprar la presentación de ${productName}. Me interesa la opción Contraentrega. Mi ciudad es: `;
-    window.open(`https://wa.me/573000000000?text=${encodeURIComponent(message)}`, "_blank");
+    window.open(`https://wa.me/573186470507?text=${encodeURIComponent(message)}`, "_blank");
   };
 
   return (
@@ -37,7 +38,7 @@ export default function ProductCardList() {
           <p className="text-[#F2EAE1]/60 max-w-2xl mx-auto font-light text-lg">Formatos en grano recién tostado para garantizar la máxima frescura y retención de perfil en cada taza.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {products.map((product, index) => (
             <motion.div
               key={product.id}
@@ -87,6 +88,10 @@ export default function ProductCardList() {
               </div>
             </motion.div>
           ))}
+        </div>
+
+        <div className="mt-16 text-center">
+          <p className="text-[#F2EAE1]/60 text-sm italic font-light tracking-wider">* Nuestros precios no incluyen costos de envío.</p>
         </div>
       </div>
     </section>

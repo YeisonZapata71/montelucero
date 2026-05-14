@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function FloatingWhatsApp() {
   const handleWhatsApp = () => {
-    window.open("https://wa.me/573000000000?text=Hola%20Monte%20Lucero,%20tengo%20una%20duda.", "_blank");
+    window.open("https://wa.me/573186470507?text=Hola%20Monte%20Lucero,%20tengo%20una%20duda.", "_blank");
   };
 
   return (
