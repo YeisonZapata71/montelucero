@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function OriginStory() {
   return (
-    <section className="bg-[#F4F0E6] w-full flex flex-col lg:flex-row border-t border-[#0A1828]/5">
+    <section className="bg-[#F4F0E6] w-full flex flex-col lg:flex-row border-t border-[#0A1828]/5 overflow-hidden">
       {/* Left side: Images */}
       <div className="w-full lg:w-1/2 relative min-h-[500px] lg:min-h-screen">
         {/* Main misty background image */}

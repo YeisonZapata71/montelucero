@@ -29,7 +29,7 @@ export default function TastingProfile() {
   return (
     <section className="bg-[#F2EAE1] w-full flex flex-col lg:flex-row">
       {/* Left side: Image with text */}
-      <div className="w-full lg:w-[45%] relative min-h-[500px] lg:min-h-screen flex items-center justify-center p-8 md:p-16 lg:p-20 overflow-hidden">
+      <div className="w-full lg:w-[45%] relative min-h-[350px] lg:min-h-screen flex items-center justify-center p-8 md:p-16 lg:p-20 overflow-hidden">
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center"

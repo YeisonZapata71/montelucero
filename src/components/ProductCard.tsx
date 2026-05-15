@@ -79,7 +79,7 @@ export default function ProductCardList() {
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                     onClick={() => openWhatsApp(product.name)}
-                    className="w-full bg-transparent hover:bg-gold-500 border border-gold-500/50 text-gold-500 py-4 font-bold uppercase tracking-[0.2em] transition-all flex items-center justify-center gap-3 group-hover:text-[#0A1828] group-hover:border-gold-500"
+                    className="w-full bg-transparent hover:bg-gold-500 border border-gold-500/50 text-gold-500 py-4 text-xs md:text-sm font-bold uppercase tracking-[0.2em] transition-all flex items-center justify-center gap-2 group-hover:text-[#0A1828] group-hover:border-gold-500"
                   >
                     <MessageCircle size={18} />
                     Pedir Ahora
