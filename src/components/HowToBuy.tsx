@@ -9,17 +9,17 @@ export default function HowToBuy() {
     {
       icon: <MousePointerClick className="w-8 h-8 text-[#0A1828]" />,
       title: "1. Selección",
-      description: "Elige tus notas y perfil de taza favoritos."
+      description: "Elige tus notas y el perfil de taza de tu preferencia."
     },
     {
       icon: <MessageCircle className="w-8 h-8 text-[#0A1828]" />,
       title: "2. Contacto",
-      description: "Confírmanos tu pedido por WhatsApp directamente."
+      description: "Confírmanos tu pedido por WhatsApp y coordina el envío."
     },
     {
       icon: <Truck className="w-8 h-8 text-[#0A1828]" />,
       title: "3. Entrega",
-      description: "Recibe el café fresco y paga al mensajero."
+      description: "Recibe tu café fresco en casa. Paga contraentrega o por medios electrónicos."
     }
   ];
 
