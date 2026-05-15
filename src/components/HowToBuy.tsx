@@ -33,7 +33,7 @@ export default function HowToBuy() {
       <div className="container mx-auto relative z-10">
         <div className="text-center mb-24">
           <h2 className="text-sm text-gold-500 uppercase tracking-[0.4em] mb-4">¿Cómo Obtenerlo?</h2>
-          <h3 className="text-3xl md:text-5xl font-black text-[#F2EAE1] mb-6 uppercase tracking-wider">La Experiencia</h3>
+          <h3 className="text-3xl md:text-5xl font-normal text-[#F2EAE1] mb-6 uppercase tracking-wider">La Experiencia</h3>
           <div className="w-12 h-0.5 bg-gold-500 mx-auto"></div>
         </div>
 
@@ -50,7 +50,7 @@ export default function HowToBuy() {
               <div className="w-24 h-24 mx-auto bg-gradient-to-br from-gold-500 to-gold-600 rounded-full mb-10 flex items-center justify-center shadow-[0_0_30px_rgba(207,160,113,0.3)] border-4 border-[#0A1828] outline outline-1 outline-gold-500/50 group-hover:scale-110 transition-transform duration-500">
                 {step.icon}
               </div>
-              <h3 className="text-lg font-black text-gold-500 mb-3 uppercase tracking-widest">{step.title}</h3>
+              <h3 className="text-lg font-normal text-gold-500 mb-3 uppercase tracking-widest">{step.title}</h3>
               <p className="text-[#F2EAE1]/70 leading-relaxed font-light px-4">{step.description}</p>
               
               {/* Elegant Connector line for desktop */}

@@ -11,7 +11,7 @@ export default function Footer() {
           
           <div className="text-center md:text-left flex-1 md:max-w-xs">
             <h2 
-              className="text-4xl font-black italic text-gold-500 font-serif tracking-widest mb-6 drop-shadow-sm leading-tight"
+              className="text-4xl font-normal italic text-gold-500 font-serif tracking-widest mb-6 drop-shadow-sm leading-tight"
               style={{ fontFamily: 'Garamond, serif' }}
             >
               Monte<br/>Lucero

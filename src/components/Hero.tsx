@@ -26,7 +26,7 @@ export default function Hero() {
             <div className="inline-block border border-gold-500/40 text-gold-500 text-xs px-4 py-1.5 tracking-[0.3em] uppercase mb-6 bg-[#0A1828]/50 backdrop-blur-sm rounded-full shadow-lg shadow-gold-500/10">
               Edición Premium
             </div>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-tight tracking-tight text-[#F2EAE1] drop-shadow-xl">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-normal leading-tight tracking-tight text-[#F2EAE1] drop-shadow-xl">
               El Alma del<br className="hidden md:block"/>
               <span className="text-gold-500 font-serif italic font-medium">Café Clásico.</span>
             </h1>

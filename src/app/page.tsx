@@ -3,6 +3,7 @@ import Hero from '@/components/Hero';
 import ProductCardList from '@/components/ProductCard';
 import TastingProfile from '@/components/TastingProfile';
 import HowToBuy from '@/components/HowToBuy';
+import OriginStory from '@/components/OriginStory';
 import GalleryMosaic from '@/components/GalleryMosaic';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
@@ -15,6 +16,7 @@ export default function Home() {
       <ProductCardList />
       <TastingProfile />
       <HowToBuy />
+      <OriginStory />
       <GalleryMosaic />
       <Footer />
       <FloatingWhatsApp />

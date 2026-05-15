@@ -34,7 +34,7 @@ export default function ProductCardList() {
       <div className="container mx-auto relative z-10">
         <div className="text-center mb-24">
           <h2 className="text-sm text-gold-500 uppercase tracking-[0.4em] mb-4">Nuestras Presentaciones</h2>
-          <h3 className="text-4xl md:text-6xl font-black text-[#F2EAE1] mb-6 uppercase tracking-wider">El Tamaño de tu Pasión</h3>
+          <h3 className="text-4xl md:text-6xl font-normal text-[#F2EAE1] mb-6 uppercase tracking-wider">El Tamaño de tu Pasión</h3>
           <p className="text-[#F2EAE1]/60 max-w-2xl mx-auto font-light text-lg">Formatos en grano recién tostado para garantizar la máxima frescura y retención de perfil en cada taza.</p>
         </div>
 
@@ -64,7 +64,7 @@ export default function ProductCardList() {
               <div className="p-8 relative z-20 flex-1 flex flex-col justify-between bg-[#0A1828]">
                 <div>
                   <p className="text-xs text-gold-500 uppercase tracking-[0.2em] mb-2 font-bold">{product.grams}</p>
-                  <h3 className="text-2xl font-black text-[#F2EAE1] mb-2 uppercase tracking-wide">{product.name}</h3>
+                  <h3 className="text-2xl font-normal text-[#F2EAE1] mb-2 uppercase tracking-wide">{product.name}</h3>
                   <div className="w-10 h-0.5 bg-gold-500/30 mb-6"></div>
                   <p className="text-3xl font-serif italic text-gold-500 mb-8">{product.price}</p>
                 </div>
