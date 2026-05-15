@@ -10,7 +10,7 @@ export default function FloatingWhatsApp() {
   return (
     <motion.button
       onClick={handleWhatsApp}
-      className="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20bd5a] text-white p-4 rounded-full shadow-lg shadow-[#25D366]/40 cursor-pointer flex items-center justify-center transition-all group"
+      className="fixed bottom-6 right-6 z-50 w-[56px] h-[56px] bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full shadow-lg shadow-[#25D366]/40 cursor-pointer flex items-center justify-center transition-all group"
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
       initial={{ y: 100, opacity: 0 }}
